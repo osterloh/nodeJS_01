@@ -4,7 +4,6 @@
       <br>
       Introdução ao nodeJS
   </h1>
-</div>
 
 ## Descrição
 
@@ -88,3 +87,5 @@ app.listen(3333, () => {
 ---
 
 Desenvolvido por [Johnatan Luiz Osterloh](https://www.linkedin.com/in/johnatanosterloh/)
+
+</div>
