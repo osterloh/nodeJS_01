@@ -1,8 +1,10 @@
-<h1 align="center" style="background-color: #100112;">
-    <img alt="nodeJS" src="https://nodejs.org/static/images/logo.svg" width="50%"/>
-    <br>
-    Introdução ao nodeJS
-</h1>
+<div style="background-color: #100112;">
+  <h1 align="center">
+      <img alt="nodeJS" src="https://nodejs.org/static/images/logo.svg" width="50%"/>
+      <br>
+      Introdução ao nodeJS
+  </h1>
+</div>
 
 ## Descrição
 
