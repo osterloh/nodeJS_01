@@ -1,9 +1,9 @@
 <div style="background-color: #100112;">
-  <h1 align="center">
+  <h1 align="center"><a href="https://nodejs.org/" target="_blank" style="text-decoration: none">
       <img alt="nodeJS" src="https://nodejs.org/static/images/logo.svg" width="50%"/>
       <br>
       Introdução ao nodeJS
-  </h1>
+  </a></h1>
 
 ## Descrição
 
