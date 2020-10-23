@@ -1,9 +1,8 @@
-<div style="background-color: #100112;">
-  <h1 align="center"><a href="https://nodejs.org/" target="_blank" style="text-decoration: none">
-      <img alt="nodeJS" src="https://nodejs.org/static/images/logo.svg" width="50%"/>
-      <br>
-      Introdução ao nodeJS
-  </a></h1>
+<h1 align="center"><a href="https://nodejs.org/" target="_blank" style="text-decoration: none">
+    <img alt="nodeJS" src="https://camo.githubusercontent.com/9c24355bb3afbff914503b663ade7beb341079fa/68747470733a2f2f6e6f64656a732e6f72672f7374617469632f696d616765732f6c6f676f2d6c696768742e737667" width="50%"/>
+    <br>
+    Introdução ao nodeJS
+</a></h1>
 
 ## Descrição
 
@@ -87,5 +86,3 @@ app.listen(3333, () => {
 ---
 
 Desenvolvido por [Johnatan Luiz Osterloh](https://www.linkedin.com/in/johnatanosterloh/)
-
-</div>
