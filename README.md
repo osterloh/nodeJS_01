@@ -76,6 +76,112 @@ app.listen(3333, () => {
 });
 ```
 
+- Métodos HTTP: GET, POST, PUT/PATCH e DELETE:
+
+```bash
+* GET: Buscar informações do back-end;
+* POST: Criar uma informação no back-end;
+* PUT/PATCH: Alterar uma informação no back-end;
+* DELETE: Deletar uma informação no back-end;
+```
+
+```js
+app.get("/projects", (request, response) => {
+  return response.json(["Projeto 1", "Projeto 2"]);
+});
+
+app.post("/projects", (request, response) => {
+  return response.json(["Projeto 1", "Projeto 2", "Projeto 3"]);
+});
+
+app.put("/projects/:id", (request, response) => {
+  return response.json(["Projeto 4", "Projeto 2", "Projeto 3"]);
+});
+
+app.delete("/projects/:id", (request, response) => {
+  return response.json(["Projeto 4", "Projeto 3"]);
+});
+```
+
+- Tipos de parâmetros: Query Params, Route Params, Request Body. São formas do front-end enviar algum tipo de informação
+
+```bash
+* Query Params: Utilizado principalmente para Filtros e paginação. É o conteúdo que vem após o ? na rota: http://localhost:3333/projects?title=React&owner=Johnatan;
+* Route Params: Utilizado para identificar recursos para Atualizar ou Deletar. É o identificador, :id, informado após a rota: http://localhost:3333/projects/1;
+* Request Body: Utilizado para o conteúdo na hora de criar ou editar um recurso, vindo através de um JSON. Porém para que o Express consiga interpretar o formato de JSON, é necessário informar o express.json() no método use(): app.use(express.json()) que deve ser declarado antes das rotas;
+```
+
+- Para retornar todos os dados dos parâmetros, Query Params:
+
+```js
+app.get("/projects", (request, response) => {
+  const query = request.query;
+  console.log(query);
+  return response.json(["Projeto 1", "Projeto 2"]);
+});
+```
+
+- Para desestruturar os parâmetros em variáveis isoladas, Query Params:
+
+```js
+app.get("/projects", (request, response) => {
+  const { title, owner } = request.query;
+
+  console.log(title);
+  console.log(owner);
+
+  return response.json(["Projeto 1", "Projeto 2"]);
+});
+```
+
+- Para retornar todos os dados dos parâmetros, Route Params:
+
+```js
+app.put("/projects/:id", (request, response) => {
+  const params = request.params;
+  console.log(params);
+  return response.json(["Projeto 4", "Projeto 2", "Projeto 3"]);
+});
+```
+
+- Para desestruturar os parâmetros em variáveis isoladas, Route Params:
+
+```js
+app.put("/projects/:id", (request, response) => {
+  const { id } = request.params;
+  console.log(id);
+  return response.json(["Projeto 4", "Projeto 2", "Projeto 3"]);
+});
+```
+
+- Para retornar todos os dados dos parâmetros, Request Body;
+
+```js
+app.post("/projects", (request, response) => {
+  const body = request.body;
+  console.log(body);
+  return response.json(["Projeto 1", "Projeto 2", "Projeto 3"]);
+});
+```
+
+- Para desestruturar os parâmetros em variáveis isoladas, Request Body;
+
+```js
+app.post("/projects", (request, response) => {
+  const { title, owner } = request.body;
+  console.log(title);
+  console.log(owner);
+  return response.json(["Projeto 1", "Projeto 2", "Projeto 3"]);
+});
+```
+
+- Declaração do use():
+
+```js
+const app = express();
+app.use(express.json());
+```
+
 ## Tecnologias
 
 - [nodeJS](https://nodejs.org/)
