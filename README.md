@@ -196,7 +196,7 @@ app.get("/projects", (request, response) => {
 });
 ```
 
-- Para a rota POST/PUT/DELETE, é necessário os dados possuirem uma key própria, para poder ser alterado ou deletado a informação cujo ID corresponda com o informado, para isso vamos instalar e importar em nosso projeto a biblioteca <b>UUIDV4</b>.
+- Para a rota POST/PUT/DELETE, é necessário os dados possuirem uma key própria, para poder ser alterado ou deletado a informação cujo ID corresponda com o informado, para isso vamos instalar e importar em nosso projeto a biblioteca <b>[UUIDV4](https://github.com/thenativeweb/uuidv4)</b>.
 
 ```bash
 yarn add uuidv4
@@ -269,6 +269,7 @@ app.get("/projects", (request, response) => {
 - [yarn](https://yarnpkg.com/)
 - [express](https://github.com/expressjs/express)
 - [nodemon](https://github.com/remy/nodemon)
+- [uuidv4](https://github.com/thenativeweb/uuidv4)
 
 ---
 
