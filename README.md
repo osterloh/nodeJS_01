@@ -263,6 +263,29 @@ app.get("/projects", (request, response) => {
 });
 ```
 
+- Middleware: interceptador de requisições que pode interromper totalmente a requisição ou alterar dados da requisição.
+  O formato de um Middleware é uma função, que recebe uma requisição, uma responsta e um próximo passo (request, response, next)
+
+```js
+function logRequests(request, response, next) {
+  const { method, url } = request;
+  const logLabel = `[${method.toUpperCase()}] ${url}`;
+  console.log(logLabel);
+  return next();
+}
+
+function validateProjectId(request, response, next) {
+  const { id } = request.params;
+  if (!isUuid) {
+    return response.status(400).json({ error: "Invalid project ID." });
+  }
+  return next();
+}
+
+app.use(logRequests);
+app.use("/projects/:id", validateProjectId);
+```
+
 ## Tecnologias
 
 - [nodeJS](https://nodejs.org/)
