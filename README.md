@@ -286,6 +286,19 @@ app.use(logRequests);
 app.use("/projects/:id", validateProjectId);
 ```
 
+- Instalar a dependência <strong>CORS</strong>, para permitir acesso do front-end no back-end:
+
+```js
+yarn add cors
+```
+
+- Configurar no projeto o cors:
+
+```js
+const cors = require("cors");
+app.use(cors());
+```
+
 ## Tecnologias
 
 - [nodeJS](https://nodejs.org/)
