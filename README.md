@@ -306,6 +306,7 @@ app.use(cors());
 - [express](https://github.com/expressjs/express)
 - [nodemon](https://github.com/remy/nodemon)
 - [uuidv4](https://github.com/thenativeweb/uuidv4)
+- [cors](https://github.com/expressjs/cors)
 
 ---
 
