@@ -8,7 +8,25 @@
 
 Este projeto foi desenvolvido em <strong>[nodeJS](https://nodejs.org/)</strong> para fins de capacitação pessoal
 
-## Etapas
+## Como Usar
+
+Para clonar e executar este aplicativo, você precisará [Git](https://git-scm.com), [Node.js v12.20.0][nodejs] ou superior + [Yarn 1.22.5][yarn] ou superior instalado no seu computador. Executar no seu terminal:
+
+```bash
+# Para clonar este repositório
+$ git clone https://github.com/osterloh/nodeJS_01.git
+
+# Entrar no repositório
+$ cd nodeJS_01
+
+# Instalar as dependências
+$ yarn
+
+#  Executar o sistema
+$ yarn dev
+```
+
+## Etapas do desenvolvimento do projeto
 
 - Antes de iniciar o projeto nodeJS, é necessário definir em qual diretório o projeto irá ficar armazendo e executar o comando para criar o arquivo <strong>package.json</strong>, o qual irá conter informações sobre o projeto e bibliotecas adicionadas:
 
