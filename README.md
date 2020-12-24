@@ -6,7 +6,7 @@
 
 ## Descrição
 
-Este projeto está sendo desenvolvido em <strong>[nodeJS](https://nodejs.org/)</strong> para fins de capacitação pessoal
+Este projeto foi desenvolvido em <strong>[nodeJS](https://nodejs.org/)</strong> para fins de capacitação pessoal
 
 ## Etapas
 
