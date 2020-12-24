@@ -10,7 +10,7 @@ Este projeto foi desenvolvido em <strong>[nodeJS](https://nodejs.org/)</strong> 
 
 ## Como Usar
 
-Para clonar e executar este aplicativo, você precisará [Git](https://git-scm.com), [Node.js v12.20.0][nodejs] ou superior + [Yarn 1.22.5][yarn] ou superior instalado no seu computador. Executar no seu terminal:
+Para clonar e executar este aplicativo, você precisará [Git](https://git-scm.com), [Node.js v12.20.0](https://nodejs.org/) ou superior + [Yarn 1.22.5](https://yarnpkg.com/) ou superior instalado no seu computador. Executar no seu terminal:
 
 ```bash
 # Para clonar este repositório
